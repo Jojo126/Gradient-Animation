@@ -166,3 +166,26 @@ a.secondary {
     filter: invert();
   }
 }
+
+.text {
+  font-size: 120px;
+  font-weight: bold;
+  fill: #FFF;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  width: 90%;
+  max-height: 100%;
+  max-width: 80rem;
+}
+.rect {
+  mix-blend-mode: hue;
+}
