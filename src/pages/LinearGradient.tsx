@@ -9,7 +9,7 @@ export default function LinearGradient({initStops, speed, svgSize}: {initStops: 
   const [stops, setStops] = useState(initStops);
   const minOffsetMargin = 30;
   
-  const requestRef = useRef<number | undefined>();
+  const requestRef = useRef<number | undefined>(undefined);
   const previousTimeRef = useRef(0);
   
   const animate = useRef((time: number) => {

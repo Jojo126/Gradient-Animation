@@ -16,7 +16,7 @@ export default function MovingBlobs({id, x, y, angle, speed, color, width, heigh
 
   const [blobState, setBlobState] = useState({x: x, y: y, angle: angle});
 
-  const requestRef = useRef<number | undefined>();
+  const requestRef = useRef<number | undefined>(undefined);
   const previousTimeRef = useRef(0);
   
   const animate = useRef((time: number) => {
